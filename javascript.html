@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Závěrečná práce - DBA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="/lightbox2-2.11.4/src/css/lightbox.css" rel="stylesheet" />
+  <script src="/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.js"></script>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+</head>
+
+<body onload="poNacteni()">
+  <div class="hodiny">
+    <h1 id="cur-time">12:00:00</h1>
+  </div>
+  <header>
+    <img class="logo" src="logo.png" alt="logo">
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="index.html">Galerie</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+        <li><a href="form.html">Formulářové prvky</a></li>
+        <li><a href="redakcni.html">Redakční systémy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="funkce">
+    <h1>JavaScripct Funkce</h1>
+    <button onclick="barvaTlacitka()" id="barvaButt">Náhodně změnit barvu tlačítka</button> <br>
+    <button onclick="barvaPozadi()">Náhodně změnit barvu pozadí</button> <br>
+    <button onclick="prekvapeni()">Klikni pro překvapení</button> <br>
+    <button onclick="datum()">Klikni pro vypsání dnešního datumu</button> <br>
+    <div id="datumos"></div>
+
+    <div id="gamesa">
+      <h1>Uhodni číslo mezi 1 - 100</h1>
+      <p>Napiš číslo: </p>
+      <input type="number" id="userInputGamesa" value="0" max="100" min="0"> <br>
+      <button id="submitGamesa">Enter</button>
+      <p id="outputPokusyGamesa">Počet pokusů:</p> <br>
+      <p id="outputGamesa"></p><br>
+    </div>
+
+    <div class="video">
+      <h1>Zde je mé oblíbené video</h1>
+      <iframe width="350" height="190" src="https://www.youtube.com/embed/IX3j84DJAGo" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+  <footer>
+    &copy; Lukáš Beránek
+  </footer>
+
+</body>
+
+</html>
