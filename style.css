@@ -1,0 +1,99 @@
+/*Nastaví základní paramtery*/
+*{
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  background-color: #343434;
+  font-family: Sora, sans-serif;
+  font-weight: 400;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+}
+
+header{
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-bar, .nav-bar li, .nav-bar li a, header{
+  background-color: #0f0e0e;
+}
+
+.nav-bar{
+  list-style: none;
+}
+
+.nav-bar li{
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-bar li a{
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-bar li a:hover{
+  color: #5D3FD3;
+}
+
+.logo{
+  display: none;
+}
+
+
+.obrazky{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: main;
+}
+
+.obrazky img, .obrazky h1{
+  padding: 10px;
+}
+
+footer{
+  grid-area: footer;
+  text-align: center;
+}
+
+@media (max-width: 854px) and (min-width:500px){
+  .nav-bar li a{
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 854px) {
+  header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+  }
+  
+  .nav-bar li{
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .obrazky{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo{
+    display: inline-block;
+  }
+}
