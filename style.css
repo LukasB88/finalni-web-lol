@@ -1,4 +1,3 @@
-/*Nastaví základní paramtery*/
 *{
   margin: 0px;
   padding: 0px;
@@ -21,7 +20,6 @@ body{
 .hodiny{
   display: none;
 }
-
 
 header{
   grid-area: nav;
@@ -56,12 +54,14 @@ header{
   display: none;
 }
 
+.div_galerie{
+  grid-area: main;
+}
 
 .obrazky{
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-area: main;
 }
 
 .obrazky img, .obrazky h1{
@@ -73,16 +73,19 @@ footer{
   text-align: center;
 }
 
-#funkce{
-  text-align: center;
+#javascript{
+  display: flex;
+  justify-content: center;
   grid-area: main;
+  flex-wrap: wrap;
 }
 
-#funkce h1{
+#funkce h1, #datumos{
   padding: 10px;
 }
 
-#funkce button{
+#funkce button, #gamesa button{
+  background-color: #0f0e0e;
   padding: 10px;
   margin: 10px;
   cursor: pointer;
@@ -90,25 +93,62 @@ footer{
   border-radius: 10px;
 }
 
-#datumos{
+#gamesa p, #gamesa input{
   padding: 10px;
+  font-size: 18px ;
+}
+
+#video h1{
+  padding-bottom: 10px;
 }
 
 #userInputGamesa{
   color: black;
 }
 
-iframe{
-  border-radius: 10px;
+#gamesa, #video, #funkce{
+  padding: 15px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), transparent;
+  border-radius: 50px;
+  margin: 15px;
+  text-align: center;
+  width: 400px;
+  height: 300px;
 }
 
-@media (max-width: 854px) and (min-width:500px){
+#funkce{
+  padding-bottom: 80px;
+}
+
+iframe{
+  border-radius: 15px;
+}
+
+.clanek{
+  margin: 150px auto;
+  width: 70%;
+}
+
+.clanek img{
+  max-width: 230px;
+  float: left;
+  border: 3px solid #fff;
+  border-radius:10px;
+  margin-right: 15px;
+}
+
+.clanek h1, .clanek img{
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 921px) and (min-width:500px){
   .nav-bar li a{
     font-size: 25px;
   }
 }
 
-@media (min-width: 854px) {
+@media (min-width: 922px) {
   
   body{
     grid-template-areas: 
@@ -136,6 +176,10 @@ iframe{
     justify-content: center;
   }
 
+  .clanek img{
+    max-width: 320px;
+  }
+
   .hodiny{
     display: flex;
     grid-area: hodiny;
@@ -148,8 +192,12 @@ iframe{
     display: inline-block;
   }
 
+  #gamesa, #video, #funkce{
+    padding: 50px;
+  }
+
   iframe{
-    width: 560px;
-    height: 315px;
+    width: 400px;
+    height: 225px;
   }
 }

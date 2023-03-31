@@ -5,7 +5,6 @@ let outputGamesa = document.getElementById("outputGamesa")
 let outputPokusyGamesa = document.getElementById("outputPokusyGamesa")
 
 
-
 function poNacteni(){
 setInterval(() =>{
   let d = new Date();
@@ -14,6 +13,7 @@ setInterval(() =>{
 
 let number = [Math.floor(Math.random() * 100)]
 let pokusyGamesa = 0
+console.log(number)
 
 btnGamesa.addEventListener("click", function(){
   pokusyGamesa += 1
@@ -21,6 +21,7 @@ btnGamesa.addEventListener("click", function(){
   let inputGamesa = document.getElementById("userInputGamesa").value;
   if (inputGamesa == number){
     outputGamesa.innerHTML = `Uhodl jsi to! Tvoje číslo bylo ${number}`
+    document.getElementById("userInputGamesa").readOnly = true;
   } else if(inputGamesa < number){
     outputGamesa.innerHTML = "Zkus větší číslo"
     outputPokusyGamesa.innerHTML = "Počet pokusů:"
