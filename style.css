@@ -68,62 +68,6 @@ header{
   padding: 10px;
 }
 
-footer{
-  grid-area: footer;
-  text-align: center;
-}
-
-#javascript{
-  display: flex;
-  justify-content: center;
-  grid-area: main;
-  flex-wrap: wrap;
-}
-
-#funkce h1, #datumos{
-  padding: 10px;
-}
-
-#funkce button, #gamesa button{
-  background-color: #0f0e0e;
-  padding: 10px;
-  margin: 10px;
-  cursor: pointer;
-  border: 0;
-  border-radius: 10px;
-}
-
-#gamesa p, #gamesa input{
-  padding: 10px;
-  font-size: 18px ;
-}
-
-#video h1{
-  padding-bottom: 10px;
-}
-
-#userInputGamesa{
-  color: black;
-}
-
-#gamesa, #video, #funkce{
-  padding: 15px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), transparent;
-  border-radius: 50px;
-  margin: 15px;
-  text-align: center;
-  width: 400px;
-  height: 300px;
-}
-
-#funkce{
-  padding-bottom: 80px;
-}
-
-iframe{
-  border-radius: 15px;
-}
-
 .clanek{
   margin: 150px auto;
   width: 70%;
@@ -141,6 +85,89 @@ iframe{
   margin-bottom: 5px;
 }
 
+footer{
+  grid-area: footer;
+  text-align: center;
+}
+
+#javascript, .formulare{
+  display: flex;
+  justify-content: center;
+  grid-area: main;
+  flex-wrap: wrap;
+}
+
+#funkce h1, #datumos{
+  padding: 10px;
+}
+
+#funkce button, #gamesa button, .but{
+  background-color: #0f0e0e;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+}
+
+#gamesa p, #gamesa input{
+  padding: 10px;
+  font-size: 18px;
+}
+
+#video h1{
+  padding-bottom: 10px;
+}
+
+#userInputGamesa{
+  color: black;
+}
+
+#funkce{
+  padding-bottom: 80px;
+}
+
+#gamesa, #video, #funkce, .qrcode, .search, .dotaznik{
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), transparent;
+  border-radius: 50px;
+  margin: 15px;
+  text-align: center;
+  width: 450px;
+  height: 450px;
+  display: grid;
+  justify-content: center;
+}
+
+input, option, select, .but{
+  margin: 8px;
+  font-size: 22px;
+  color: black;
+}
+
+label{
+  font-size: 22px;
+}
+
+.but{
+  color: white;
+}
+
+iframe{
+  border: 1px white solid;
+  border-radius: 15px;
+}
+
+.videos, .searchos{
+  width: 400px;
+  height: 225px;
+}
+
+.qrcodos{
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
 
 @media (max-width: 921px) and (min-width:500px){
   .nav-bar li a{
@@ -192,12 +219,12 @@ iframe{
     display: inline-block;
   }
 
-  #gamesa, #video, #funkce{
+  #gamesa, #video, #funkce, .dotaznik, .qrcode, .search{
     padding: 50px;
   }
 
-  iframe{
-    width: 400px;
-    height: 225px;
+  .videos, .searchos{
+    width: 480px;
+    height: 270px;
   }
 }

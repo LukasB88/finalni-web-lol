@@ -28,6 +28,51 @@
     </nav>
   </header>
 
+  <div class="formulare">
+    <div class="dotaznik">
+      <form id="dotaznikForm">
+        <label for="jmeno">Jméno</label> <br>
+        <input type="text" name="jmeno" id="jmeno"> <br>
+        <label for="prijmeni">Příjmení</label> <br>
+        <input type="text" name="prijmeni" id="prijmeni"> <br>
+        <label for="vda">Mám rád VDA</label> <br>
+        <input type="checkbox" name="vda" id="vdaEnjoyer" value=""> <br>
+        <label for="pizza">Oblíbená pizza</label> <br>
+        <select name="pizza" id="pizza">
+          <option value="Sýrová">Sýrová</option>
+          <option value="Šunková">Šunková</option>
+          <option value="Salámová">Salámová</option>
+          <option value="Hawai">Hawai</option>
+        </select> <br>
+        <button type="submit" onclick="vypis()" class="but">Odeslat</button>
+      </form>
+      <div id="vystup"></div>
+    </div>
+
+    <div class="search">
+      <form action="https://cs.wikipedia.org/w/index.php?" target="g">
+        <label for="search">Wikipedia search</label> <br>
+        <input type="text" name="search"> <br>
+        <input type="submit" class="but">
+      </form>
+      <iframe name="g" class="searchos"></iframe>
+    </div>
+
+    <div class="qrcode">
+      <form action="http://api.qrserver.com/v1/create-qr-code/?&" target="qr">
+        <label for="data">Co chceš napsat do qr kodu? </label> <br>
+        <input type="text" name="data"><br>
+        <select name="size">
+          <option value="150x150">Malý</option>
+          <option value="250x250">Velký</option>
+        </select> <br>
+        <input type="submit" class="but">
+      </form>
+      <iframe name="qr" class="qrcodos"></iframe>
+    </div>
+  </div>
+
+
   <footer>
     &copy; Lukáš Beránek
   </footer>

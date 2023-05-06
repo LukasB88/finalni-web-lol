@@ -1,4 +1,3 @@
-
 let time = document.getElementById("cur-time");
 let btnGamesa = document.getElementById("submitGamesa")
 let outputGamesa = document.getElementById("outputGamesa")
@@ -60,6 +59,31 @@ function prekvapeni(){
 
 function datum(){
   const d = new Date()
+  let butt = document.querySelector("#datumButt")
 
-  document.getElementById("datumos").innerHTML = d.toLocaleDateString()
+  if (butt.textContent === "Klikni pro zobrazení dnešního datumu") {
+    butt.textContent = "Klikni pro skrytí dnešního datumu";
+    document.getElementById("datumos").innerHTML = d.toLocaleDateString()
+  } else {
+    butt.textContent = "Klikni pro zobrazení dnešního datumu";
+    document.getElementById("datumos").innerHTML = ""
+  }
+}
+
+function vypis(){
+  document.getElementById("dotaznikForm").addEventListener("submit", function(event) {
+    event.preventDefault();  });
+  let vystup = document.getElementById("vystup")
+  let jmeno = document.getElementById("jmeno").value
+  let prijmeni = document.getElementById("prijmeni").value
+  let oblibenyPredmet = document.getElementById("vdaEnjoyer")
+  let pizza = document.getElementById("pizza").value
+
+  if (oblibenyPredmet.checked){
+    oblibenyPredmet = "Ano"
+  } else {
+    oblibenyPredmet = "Ne"
+  }
+
+  vystup.innerHTML = "Jméno: " + jmeno + "<br>Příjmení: " + prijmeni + "<br>VDA enjoyer: " + oblibenyPredmet + "<br>Oblíbená pizza: " + pizza
 }
