@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   color: white;
-  font-family: Sora, sans-serif;
+  font-family: sora, sans-serif;
   font-weight: 400;
 }
 
@@ -159,8 +159,9 @@ iframe{
 }
 
 .videos, .searchos{
-  width: 400px;
-  height: 225px;
+  width: 288px;
+  height: 162px;
+  margin: 0 auto;
 }
 
 .qrcodos{
