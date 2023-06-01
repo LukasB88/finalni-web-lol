@@ -66,7 +66,7 @@ function datum(){
     document.getElementById("datumos").innerHTML = d.toLocaleDateString()
   } else {
     butt.textContent = "Klikni pro zobrazení dnešního datumu";
-    document.getElementById("datumos").innerHTML = ""
+    document.getElementById("datumos").innerHTML = "&nbsp;"
   }
 }
 
