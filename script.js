@@ -1,4 +1,4 @@
-let time = document.getElementById("cur-time");
+let time = document.getElementById("cur-time")
 let btnGamesa = document.getElementById("submitGamesa")
 let outputGamesa = document.getElementById("outputGamesa")
 let outputPokusyGamesa = document.getElementById("outputPokusyGamesa")
@@ -54,7 +54,7 @@ function barvaPozadi(){
 }
 
 function prekvapeni(){
-  alert("Smrdí ti prdel")
+  alert("RSnasty je cigan")
 }
 
 function datum(){
@@ -76,7 +76,7 @@ function vypis(){
   let vystup = document.getElementById("vystup")
   let jmeno = document.getElementById("jmeno").value
   let prijmeni = document.getElementById("prijmeni").value
-  let oblibenyPredmet = document.getElementById("vdaEnjoyer")
+  let oblibenyPredmet = document.getElementById("vda")
   let pizza = document.getElementById("pizza").value
 
   if (oblibenyPredmet.checked){
